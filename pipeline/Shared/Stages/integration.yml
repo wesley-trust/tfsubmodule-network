@@ -1,0 +1,9 @@
+stages:
+- stage: Integration
+  condition: or(eq(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.Reason'], 'Manual'))
+  pool:
+    vmImage: 'ubuntu-latest'
+  jobs:
+  
+  # Integration Test Jobs
+  - template: ../Jobs/integration.yml

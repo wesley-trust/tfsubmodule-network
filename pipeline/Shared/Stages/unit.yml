@@ -1,0 +1,9 @@
+stages:
+- stage: Unit
+  condition: ne(variables['Build.Reason'], 'PullRequest')
+  pool:
+    vmImage: 'ubuntu-latest'
+  jobs:
+  
+  # Integration Test Jobs
+  - template: ../Jobs/unit.yml
