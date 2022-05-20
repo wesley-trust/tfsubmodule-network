@@ -55,7 +55,7 @@ func TestApplySingleSubnet(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 
 	// Run `terraform output` to get the values of output variables
-	output := terraform.Output(t, terraformOptions, "network_name")
+	output := terraform.Output(t, terraformOptions, "networkName")
 	assert.Equal(t, networkName, output)
 }
 
@@ -104,7 +104,7 @@ func TestApplyMultiSubnet(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 
 	// Run `terraform output` to get the values of output variables
-	output := terraform.Output(t, terraformOptions, "network_name")
+	output := terraform.Output(t, terraformOptions, "networkName")
 	assert.Equal(t, networkName, output)
 }
 
