@@ -1,0 +1,7 @@
+jobs:
+
+- job: RegressionTests
+  displayName: 'Regression Tests Trigger'
+  continueOnError: false
+  steps:
+  - bash: echo "Triggering Regression Tests"
