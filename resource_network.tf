@@ -9,6 +9,7 @@ resource "azurerm_virtual_network" "virtual_network" {
   tags = {
     environment = var.resource_environment
     role        = var.resource_network_role
+    deployment  = var.resource_deployment
   }
 }
 

@@ -30,6 +30,11 @@ variable "resource_environment" {
   type        = string
 }
 
+variable "resource_deployment" {
+  description = "Desired deployment identifier for the provisioned resources"
+  type        = string
+}
+
 variable "resource_dns_servers" {
   description = "Desired DNS servers for the provisioned resources"
   type        = list(string)
