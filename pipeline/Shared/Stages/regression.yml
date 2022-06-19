@@ -1,0 +1,9 @@
+stages:
+- stage: Regression
+  condition: and(ne(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  pool:
+    vmImage: 'ubuntu-latest'
+  jobs:
+  
+  # Integration Test Jobs
+  - template: ../Jobs/regression.yml
