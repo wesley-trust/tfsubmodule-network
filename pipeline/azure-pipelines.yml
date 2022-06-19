@@ -5,7 +5,7 @@ trigger:
     include:
     - '*'
     exclude:
-    - main
+    #- main
   paths:
     exclude:
     - README.md
