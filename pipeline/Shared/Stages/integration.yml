@@ -1,6 +1,6 @@
 stages:
 - stage: Integration
-  condition: or(eq(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.Reason'], 'Manual'))
+  condition: or(eq(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.Reason'], 'Manual'), eq(variables['Build.Reason'], 'ResourceTrigger'))
   pool:
     vmImage: 'ubuntu-latest'
   jobs:
