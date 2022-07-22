@@ -79,7 +79,7 @@ func TestPlanMultiSubnet(t *testing.T) {
 		Vars: map[string]interface{}{
 			"service_deployment": serviceDeployment,
 			"service_location":   locations,
-			"resource_network_subnet_count": 1,
+			"resource_network_subnet_count": 2,
 		},
 	})
 
