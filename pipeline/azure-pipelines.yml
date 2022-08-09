@@ -23,7 +23,7 @@ pr:
 resources:
   pipelines:
   - pipeline: 'Resource Group'  
-    source: tfmodule-resource_group
+    source: ENV-P;REF-latest; tfmodule-resource_group
     trigger:    
       stages:
       - Regression
